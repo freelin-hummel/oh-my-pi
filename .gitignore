@@ -70,3 +70,9 @@ python/robomp/.cache/
 python/robomp/src/robomp/static/
 python/robomp/web/dist/
 python/robomp/.env
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key
+.beads/proxieddb/
