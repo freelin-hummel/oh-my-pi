@@ -1,0 +1,23 @@
+name: Add issues and PRs to thilke project
+
+on:
+  issues:
+    types:
+      - opened
+      - reopened
+      - transferred
+      - labeled
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - labeled
+
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@v2
+        with:
+          project-url: https://github.com/users/freelin-hummel/projects/3
+          github-token: ${{ secrets.THILKE_PROJECT_PAT }}
